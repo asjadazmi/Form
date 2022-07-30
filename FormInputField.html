@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee payroll</title>
+    <link rel="stylesheet" href="FormInputField.css">
+    
+</head>
+<body>
+  <form onsubmit="return validate()">
+    <header class="headerContainer"><h1>Form Input Field</h1></header>
+    <div>
+        <label for="text">Enter name</label>
+        <input id="text" type="text" name="text" placeholder="username">
+        <error-output class="text-error" for="text"></error-output>
+    </div>
+    <div>
+        <label for="pwd">Enter Password</label>
+        <input id="pwd" type="password" name="password" placeholder="Enter password">
+    </div>
+    <div>
+        <label for="mail">Enter Email Id</label>
+        <input id="mail" type="Email" name="Email" placeholder="Email id">
+        <error-output class="mail-error" for="mail"></error-output>
+    </div>
+    <div>
+        <label for="url">Enter url</label>
+        <input id="url" type="url" name="url">
+    </div>
+    <div>
+        <label for="number">Enter Mobile Number</label>
+        <input id="number" type="phonenumber" name="number">
+    </div>
+    <div>
+        <label for="tel">Enter tel</label>
+        <input id="tel" type="tel" name="tel">
+    </div>
+    <div>
+        <label for="search">search</label>
+        <input id="search" type="search" name="search">
+    </div>
+    <div class="navigateDateTimePicker">
+        <label for="party">Enter date time</label>
+        <input id="party" type="datetime-local" name="bday">
+        <span class="validity"></span>
+    </div>
+    <div>
+        <label for="salary">Enter salary</label>
+        <input id="salary" type="range" name="salary" min="30000" max="500000"
+        step="100" value="40000">
+        <output class="salary-output" for="salary">40000</output>
+    </div>
+    <div>
+        <button >submit</button>
+    </div>
+    
+  </form>
+  <script src="FormInputField.js" type="text/javaScript"></script>
+  
+    
+</body>
+</html>
